@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 50px;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 1000px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left-side {
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.profileText .imgDiv {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgDiv img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h1 {
+    color: #fff;
+    font-size: 1.3em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 1.3em;
+    letter-spacing: 2px;
+}
+
+.profileText h1 span {
+    font-weight: 300;
+    font-size: 0.8em;
+    text-transform: capitalize;
+}
+
+.contactInfo {
+    padding-top: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul {
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    margin: 10px 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.contactInfo ul li span {
+    font-weight: 300;
+    color: #ffffffc5;
+}
+
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contactInfo.education li {
+    margin-bottom: 25px;
+}
+
+.contactInfo.education h6 {
+    color: #03a9f4;
+}
+
+.contactInfo.education h5 {
+    font-weight: 300;
+}
+
+.contactInfo.education li h4 {
+    color: #ffffffc5;
+}
+
+.contactInfo.languages .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #000;
+    display: block;
+    margin-top: 5px;
+
+}
+
+.contactInfo.languages .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+
+.container .right-side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.right-side .title2 h4 {
+    color: #003147;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(12, 12, 12, 0.626);
+}
+
+.right-side .objective .title2 p {
+    color: #033851d9;
+    text-align: justify;
+}
+
+.right-side .skills ul li {
+    list-style: none;
+    color: #033851d9;
+    margin-bottom: 15px;
+}
+
+.skills .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #000;
+    display: block;
+    margin-top: 5px;
+
+}
+
+.skills .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.right-side .interest ul li {
+    color: #033851d9;
+    margin-bottom: 10px;
+    margin-left: 3%;
+}
+
+/* making responsive */
+
+@media screen and (max-width:880px) {
+    .container {
+        margin: 10px;
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    ;
+}
+
+;
